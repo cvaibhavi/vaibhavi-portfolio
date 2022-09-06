@@ -5,6 +5,7 @@ import Top from './Components/Top';
 import Art from './Pages/Art';
 import NotFoundPage from './Pages/NotFoundPage';
 import Painting from './Pages/Painting';
+import Projects from './Pages/Projects';
 import Snaps from './Pages/Snaps';
 import Sports from './Pages/Sports';
 import SportsAchievements from './Pages/SportsAchievements';
@@ -24,6 +25,7 @@ function App() {
           <Route path='/sports' element={<Sports/>}/>
           <Route path='/achievements' element={<SportsAchievements/>}/>
           <Route path='/snaps' element={<Snaps/>}/>
+          <Route path='/projects' element={<Projects/>}/>
           <Route path='*' component={NotFoundPage}/>
         </Routes>
       </BrowserRouter>

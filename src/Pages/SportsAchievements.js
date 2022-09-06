@@ -1,4 +1,4 @@
-import { Button,  Heading, IconButton, Image,  VStack } from '@chakra-ui/react'
+import { Button,  Heading, IconButton, Image,  Text,  VStack } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {  FaArrowLeft} from 'react-icons/fa';
@@ -49,6 +49,7 @@ const SportsAchievements = () => {
                   boxShadow="lg"
                   w='350px' h='300px'
                  src={window.location.origin + '/sports/c5.jpg'}/>
+        <Text color='blue'>and many more</Text>
     
      <Button><Link to="/sports">Go back</Link></Button>
     </VStack>
