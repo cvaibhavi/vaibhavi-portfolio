@@ -49,7 +49,7 @@ const SportsAchievements = () => {
                   boxShadow="lg"
                   w='350px' h='300px'
                  src={window.location.origin + '/sports/c5.jpg'}/>
-        <Text color='blue'>and many more</Text>
+        <Text color='blue'>and many more....</Text>
     
      <Button><Link to="/sports">Go back</Link></Button>
     </VStack>

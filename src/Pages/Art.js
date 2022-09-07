@@ -9,7 +9,7 @@ const Art = () => {
 
   return (
     <Stack alignItems='center'>
-            <Heading>Arts</Heading>
+            <Heading>My Arts and Crafts</Heading>
     <Flex direction={isNotSmallerScreen ? "row" : "column"} 
           mt='8' w='100%' px='15' py='15' 
           justifyContent='center'>
@@ -33,7 +33,30 @@ const Art = () => {
                  boxSize="300px"
                  src={window.location.origin + '/wallpaint/h-3.jpg'}/>
     
+    <Image alignSelf='center' p='5'
+                 borderRadius='10%'
+                 backgroundColor="transparent" 
+                 boxShadow="lg"
+                 boxSize="300px"
+                 src={window.location.origin + '/wallpaint/h-4.jpg'}/>
+    
      </Flex>
+     <Flex direction={isNotSmallerScreen ? "row" : "column"} 
+          mt='8' w='100%' px='15' py='15' 
+          justifyContent='center'>
+            <Image alignSelf='center' p='5'
+                 borderRadius='10%'
+                 backgroundColor="transparent" 
+                 boxShadow="lg"
+                 boxSize="300px"
+                 src={window.location.origin + '/wallpaint/mandalArt1.jpg'}/>
+            <Image alignSelf='center' p='5'
+                 borderRadius='10%'
+                 backgroundColor="transparent" 
+                 boxShadow="lg"
+                 boxSize="300px"
+                 src={window.location.origin + '/wallpaint/mandalArt2.jpg'}/>
+          </Flex>
      <Button><Link to="/">Go back</Link></Button>
     </Stack>
     
