@@ -2,8 +2,7 @@ import React from 'react'
 import { useMediaQuery } from '@chakra-ui/media-query';
 import { Box, Flex, Text } from '@chakra-ui/layout';
 import Icon from '@chakra-ui/icon';
-import { DiWebplatform } from 'react-icons/di'
-import {  FaPaintBrush, FaProjectDiagram, FaRProject, FaRunning, FaSketch } from 'react-icons/fa';
+import {  FaPaintBrush, FaProjectDiagram, FaRunning, FaSketch } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 
 

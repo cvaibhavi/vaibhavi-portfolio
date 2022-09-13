@@ -27,7 +27,7 @@ const Top = () => {
 
   return ( 
     <>
-    <VStack p='5'>
+    <VStack p='5' overflow='hidden'>
     <Flex w='100%'>
       <Heading ml='8' fontWeight='semibold' color='cyan.400' >Portfolio</Heading>
       <Spacer/>

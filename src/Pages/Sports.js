@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Icon, IconButton, Spacer, Text } from '@chakra-ui/react'
+import { Box, Flex, Icon, IconButton, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
 import { FaArrowLeft, FaAward, FaCamera } from 'react-icons/fa'
 import { useMediaQuery } from '@chakra-ui/media-query';
