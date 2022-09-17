@@ -5,7 +5,7 @@ import { useMediaQuery } from '@chakra-ui/media-query';
 
 const Painting = () => {
 
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:1159px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:760px)");
   return (
     <Stack alignItems='center'>
     <Heading>Paintings</Heading>
@@ -13,25 +13,25 @@ const Painting = () => {
       mt='8' w='100%' px='15' py='15' 
       justifyContent='center'>
         
-        <Image alignSelf='center' p='5'
+        <Image alignSelf='center' p='3'
                      borderRadius='10%'
                      backgroundColor="transparent" 
                      boxShadow="lg"
                      boxSize="300px"
                      src={window.location.origin + '/wallpaint/4paint.jpeg'}/>
-        <Image alignSelf='center' p='5'
+        <Image alignSelf='center' p='3'
                      borderRadius='10%'
                      backgroundColor="transparent" 
                      boxShadow="lg"
                      boxSize="300px"
                      src={window.location.origin + '/wallpaint/1paint.jfif'}/>
-        <Image alignSelf='center' p='5'
+        <Image alignSelf='center' p='3'
                      borderRadius='10%'
                      backgroundColor="transparent" 
                      boxShadow="lg"
                      boxSize="300px"
                      src={window.location.origin + '/wallpaint/2paint.jfif'}/>
-        <Image alignSelf='center' p='5'
+        <Image alignSelf='center' p='3'
                      borderRadius='10%'
                      backgroundColor="transparent" 
                      boxShadow="lg"

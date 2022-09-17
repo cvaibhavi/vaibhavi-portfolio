@@ -5,8 +5,7 @@ import {  FaArrowLeft} from 'react-icons/fa';
 
 
 const SportsAchievements = () => {
-
-    
+ 
 
   return (
     <>
@@ -20,7 +19,7 @@ const SportsAchievements = () => {
         <Image alignSelf='center'
                   backgroundColor="transparent" 
                   boxShadow="lg"
-                  w='400px' h='400px'
+                  w='400px' h='350px'
                  src={window.location.origin + '/sports/Prize.jpg'}/>
         <Image alignSelf='center'
                   backgroundColor="transparent" 

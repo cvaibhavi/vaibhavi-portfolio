@@ -15,6 +15,7 @@ import {VStack,
         HStack} from '@chakra-ui/react'
 import {FaSun,FaMoon,FaLinkedinIn, FaGithub, FaPhone, FaFacebookF, FaInstagram} from 'react-icons/fa'
 import {PhoneIcon,EmailIcon} from '@chakra-ui/icons'
+import { useMediaQuery } from '@chakra-ui/media-query';
 import Header from './Header'
 
 
@@ -23,13 +24,14 @@ const Top = () => {
     const {colorMode, toggleColorMode} = useColorMode();
     const isDark = colorMode === "dark";
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:760px)");
     
 
   return ( 
     <>
-    <VStack p='5' overflow='hidden'>
+    <VStack py={isNotSmallerScreen ? "5" : "2"} mt='5' overflow='hidden'>
     <Flex w='100%'>
-      <Heading ml='8' fontWeight='semibold' color='cyan.400' >Portfolio</Heading>
+      <Heading ml={isNotSmallerScreen ? "8" : "2"} fontWeight='semibold' color='cyan.400' px='4'>Portfolio</Heading>
       <Spacer/>
       <Link href='https://www.linkedin.com/in/vaibhavi-c-93968920a'>
         <IconButton icon={<FaLinkedinIn />} isRound='true'></IconButton>
@@ -41,7 +43,7 @@ const Top = () => {
         
         
         <IconButton ml={2} icon={<FaPhone />} isRound='true' onClick={onOpen}></IconButton>
-        <IconButton ml={8} icon={isDark ? <FaSun/> : <FaMoon/>} isRound='true' onClick={toggleColorMode}></IconButton>
+        <IconButton ml={isNotSmallerScreen ? "8" : "2"} mr={isNotSmallerScreen ? "8" : "2"} icon={isDark ? <FaSun/> : <FaMoon/>} isRound='true' onClick={toggleColorMode}></IconButton>
     </Flex>
       <Drawer placement='right' onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />

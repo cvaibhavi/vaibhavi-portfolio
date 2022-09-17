@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 
 const Snaps = () => {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:1159px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:760px)");
 
   return (
-    <Stack alignItems='center'>
+    <Stack alignItems='center' maxWidth='100%'>
     <Heading>Photos</Heading>
 <Flex direction={isNotSmallerScreen ? "row" : "column"} 
-  mt='8' w='100%' px='15' py='15' 
+  mt='8' maxWidth='100%' px='15' py='15' 
   justifyContent='center'>
 
 <Image alignSelf='center' 
@@ -34,7 +34,7 @@ const Snaps = () => {
          src={window.location.origin + '/sports/postRace.jpg'}/>
 </Flex>
 <Flex direction={isNotSmallerScreen ? "row" : "column"} 
-  mt='8' w='100%' px='15' py='15' 
+  mt='8' maxWidth='100%' px='15' py='15' 
   justifyContent='center'>
 <Box borderRadius='20%' bg='blue.400' h='50px' w='50px' textAlign='center'> 
     <Text fontSize='medium'>Year 2016</Text>
@@ -65,7 +65,7 @@ const Snaps = () => {
          
   </Flex>
   <Flex direction={isNotSmallerScreen ? "row" : "column"} 
-  mt='8' w='100%' px='15' py='15' 
+  mt='8' maxWidth='100%' px='15' py='15' 
   justifyContent='center'>
     <Image alignSelf='center' 
          p={2} 

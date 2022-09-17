@@ -5,35 +5,35 @@ import { Link } from 'react-router-dom'
 
 const Art = () => {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:1159px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:760px)");
 
   return (
     <Stack alignItems='center'>
             <Heading>My Arts and Crafts</Heading>
     <Flex direction={isNotSmallerScreen ? "row" : "column"} 
-          mt='8' w='100%' px='15' py='15' 
+          mt='8' maxWidth='100%' px='15' py='15' 
           justifyContent='center'>
     
-    <Image alignSelf='center' p='5'
+    <Image alignSelf='center' p='3'
                  borderRadius='10%'
                  backgroundColor="transparent" 
                  boxShadow="lg"
                  boxSize="300px"
                  src={window.location.origin + '/wallpaint/h-1.jpg'}/>
-    <Image alignSelf='center' p='5'
+    <Image alignSelf='center' p='3'
                  borderRadius='10%'
                  backgroundColor="transparent" 
                  boxShadow="lg"
                  boxSize="300px"
                  src={window.location.origin + '/wallpaint/h-2.jpg'}/>
-    <Image alignSelf='center' p='5'
+    <Image alignSelf='center' p='3'
                  borderRadius='10%'
                  backgroundColor="transparent" 
                  boxShadow="lg"
                  boxSize="300px"
                  src={window.location.origin + '/wallpaint/h-3.jpg'}/>
     
-    <Image alignSelf='center' p='5'
+    <Image alignSelf='center' p='3'
                  borderRadius='10%'
                  backgroundColor="transparent" 
                  boxShadow="lg"
@@ -42,15 +42,15 @@ const Art = () => {
     
      </Flex>
      <Flex direction={isNotSmallerScreen ? "row" : "column"} 
-          mt='8' w='100%' px='15' py='15' 
+          mt='8' maxWidth='100%' px='15' py='15' 
           justifyContent='center'>
-            <Image alignSelf='center' p='5'
+            <Image alignSelf='center' p='3'
                  borderRadius='10%'
                  backgroundColor="transparent" 
                  boxShadow="lg"
                  boxSize="300px"
                  src={window.location.origin + '/wallpaint/mandalArt1.jpg'}/>
-            <Image alignSelf='center' p='5'
+            <Image alignSelf='center' p='3'
                  borderRadius='10%'
                  backgroundColor="transparent" 
                  boxShadow="lg"

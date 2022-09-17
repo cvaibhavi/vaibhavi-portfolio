@@ -1,12 +1,9 @@
-import { Box, Button, Flex, Image, Spacer, Stack, Text, useColorMode, useMediaQuery } from '@chakra-ui/react';
+import { Box, Button, Flex, Image, Spacer, Stack, Text,  useMediaQuery } from '@chakra-ui/react';
 import React from 'react'
 
 function Header() {
 
-  const { colorMode } = useColorMode();
-  const isDark = colorMode === "dark";
-
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:1159px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:760px)");
 
   return (
     
@@ -21,7 +18,7 @@ function Header() {
                       fontWeight="bold" 
                       bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" 
                       bgClip='text' >Vaibhavi</Text>
-                <Text color={isDark ? "gray.200" : "gray.500"}>Student</Text>
+                
                 <Button mt={8} colorScheme="blue" 
                              onClick={()=> window.open('/Resume.pdf')}> Hire Me </Button>
               </Box>

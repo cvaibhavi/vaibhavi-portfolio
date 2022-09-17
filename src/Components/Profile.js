@@ -1,6 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from '@chakra-ui/media-query';
-import { Box, Flex, Text } from '@chakra-ui/layout';
+import { Flex, Text,Stack } from '@chakra-ui/layout';
 import Icon from '@chakra-ui/icon';
 import {  FaPaintBrush, FaProjectDiagram, FaRunning, FaSketch } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
@@ -9,14 +9,12 @@ import { useNavigate } from "react-router-dom";
 
 function Profile() {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:1159px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:760px)");
     const navigate = useNavigate(); 
 
     return (
+        <Stack alignItems='center' mb='8'>
 
-        <Flex direction={isNotSmallerScreen ? "row" : "column"} w="100%" 
-            maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}>
-            <Box alignSelf="center" px="32" py="16">
             <Flex direction={isNotSmallerScreen ? "row" : "column"} mt={8} >
             
             <div onClick={() => navigate("/painting")}>  
@@ -65,12 +63,9 @@ function Profile() {
                         </Text>
                     </Flex>
             </div>
-                </Flex>
-
-            </Box>
-            
         </Flex>
-
+    </Stack>
+    
     )
 }
 

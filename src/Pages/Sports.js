@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Sports = () => {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:1159px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:760px)");
     const navigate = useNavigate(); 
 
   return (
