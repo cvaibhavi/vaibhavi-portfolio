@@ -16,7 +16,7 @@ const Projects = () => {
         
         <Divider/>
            <Box p='5'>
-            <Link href='https://walldesign.herokuapp.com/auth/login'>
+            <Link href='https://github.com/cvaibhavi/webapplication'>
                 <Button>Wall Design</Button>
             </Link>
             <Text>This is an E-Commerce web Application.</Text>
@@ -30,14 +30,18 @@ const Projects = () => {
             </Box>
            <Divider/>
            <Box  p='5'>
+            <Link href='https://manglore-store.vercel.app/'>
+                 <Button>Manglore Store</Button>
+            </Link>
+            <Text>This is a Store.Worked on frontend part using React, Redux and Tailwind CSS for design.</Text>    
+            </Box>
+            <Divider/>
+           <Box  p='5'>
             <Link href='https://github.com/cvaibhavi/Calsi'>
                  <Button>Basic Calculator</Button>
             </Link>
             <Text>This is a basic calculator.Worked on frontend Design using html,css and javascript.</Text>    
             </Box>
-
-            
-
             <Divider/>
 
 

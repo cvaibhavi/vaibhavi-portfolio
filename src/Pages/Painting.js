@@ -18,7 +18,29 @@ const Painting = () => {
                      backgroundColor="transparent" 
                      boxShadow="lg"
                      boxSize="300px"
+                     src={window.location.origin + '/wallpaint/wp-2.jpg'}/>
+        <Image alignSelf='center' p='3'
+                     borderRadius='10%'
+                     backgroundColor="transparent" 
+                     boxShadow="lg"
+                     boxSize="300px"
+                     src={window.location.origin + '/wallpaint/wp-3.jpg'}/>
+        <Image alignSelf='center' p='3'
+                     borderRadius='10%'
+                     backgroundColor="transparent" 
+                     boxShadow="lg"
+                     boxSize="300px"
+                     src={window.location.origin + '/wallpaint/wp-1.jpg'}/>
+        <Image alignSelf='center' p='3'
+                     borderRadius='10%'
+                     backgroundColor="transparent" 
+                     boxShadow="lg"
+                     boxSize="300px"
                      src={window.location.origin + '/wallpaint/4paint.jpeg'}/>
+  </Flex>
+  <Flex direction={isNotSmallerScreen ? "row" : "column"} 
+      mt='8' w='100%' px='15' py='15' 
+      justifyContent='center'>
         <Image alignSelf='center' p='3'
                      borderRadius='10%'
                      backgroundColor="transparent" 
