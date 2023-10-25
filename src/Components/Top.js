@@ -13,7 +13,7 @@ import {VStack,
         DrawerOverlay,
         Link,
         HStack} from '@chakra-ui/react'
-import {FaSun,FaMoon,FaLinkedinIn, FaGithub, FaPhone, FaFacebookF, FaInstagram} from 'react-icons/fa'
+import {FaSun,FaMoon,FaLinkedinIn, FaGithub, FaPhone, FaFacebookF, FaInstagram, FaBehance, FaDribbble, FaLinkedin} from 'react-icons/fa'
 import {PhoneIcon,EmailIcon} from '@chakra-ui/icons'
 import { useMediaQuery } from '@chakra-ui/media-query';
 import Header from './Header'
@@ -31,12 +31,15 @@ const Top = () => {
     <>
     <VStack py={isNotSmallerScreen ? "5" : "2"} mt='5' overflow='hidden'>
     <Flex w='100%'>
-      <Heading ml={isNotSmallerScreen ? "8" : "2"} fontWeight='semibold' color='cyan.400' px='4'>Portfolio</Heading>
+      <Heading ml={isNotSmallerScreen ? "8" : "2"} fontWeight='semibold' color='purple.600' px='4'>Portfolio</Heading>
       <Spacer/>
-      <Link href='https://www.linkedin.com/in/vaibhavi-c-93968920a'>
-        <IconButton icon={<FaLinkedinIn />} isRound='true'></IconButton>
+      
+      <Link href='https://www.behance.net/vaibhavic2 '>
+        <IconButton ml={2} icon={<FaBehance />} isRound='true'></IconButton>
       </Link>
-        
+      <Link href='https://dribbble.com/vaibhaviprabhu '>
+        <IconButton ml={2} icon={<FaDribbble />} isRound='true'></IconButton>
+      </Link>
       <Link href='https://github.com/cvaibhavi'>
       <IconButton ml={2} icon={<FaGithub />} isRound='true'></IconButton>
       </Link>
@@ -66,7 +69,10 @@ const Top = () => {
                         icon={<EmailIcon/>}
                       />
                   <b> cvaibhavi2001@gmail.com</b></p><br />
-                <HStack spacing='14' px='16'>
+                <HStack spacing='10' px='8'>
+                  <Link href='https://www.linkedin.com/in/vaibhavi-c-93968920a'>
+                    <IconButton ml={2} icon={<FaLinkedinIn/>} variant='outline'  isRound='true' />
+                  </Link>
                   <Link href='https://m.facebook.com/100021618545682/'>
                     <IconButton ml={2} icon={<FaFacebookF/>} variant='outline'  isRound='true' />
                   </Link>

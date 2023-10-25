@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Box, Button, Divider, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { useMediaQuery } from '@chakra-ui/media-query';
 import { Link } from 'react-router-dom'
@@ -9,7 +9,24 @@ const Snaps = () => {
 
   return (
     <Stack alignItems='center' maxWidth='100%'>
-    <Heading>Photos</Heading>
+    <Flex direction={'row'}>
+         <Box p='5' justifyItems={'flex-start'}>
+          <Link to='/sports'>
+            <Button>Back</Button>
+          </Link>  
+         </Box>
+        
+        
+        <Box p='5'>
+           <Heading> Photos </Heading>
+        </Box>
+         <Divider/>
+        <Box p='5' justifyItems={'flex-end'}>
+          <Link to='/snaps'>
+            <Button>Achievements</Button>
+          </Link>  
+         </Box>
+       </Flex>
 <Flex direction={isNotSmallerScreen ? "row" : "column"} 
   mt='8' maxWidth='100%' px='15' py='15' 
   justifyContent='center'>

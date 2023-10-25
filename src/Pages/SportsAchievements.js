@@ -1,7 +1,7 @@
-import { Button,  Heading, IconButton, Image,  Text,  VStack } from '@chakra-ui/react'
+import { Box, Button,  Divider,  Flex,  Heading, IconButton, Image,  Spacer,  Text,  VStack } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {  FaArrowLeft} from 'react-icons/fa';
+
 
 
 const SportsAchievements = () => {
@@ -11,16 +11,32 @@ const SportsAchievements = () => {
     <>
     
     <VStack alignItems='center' px={10}>
-            <Heading>Achievements</Heading>
-            <Link to="/sports">
-              <IconButton ml={2} icon={<FaArrowLeft />} isRound='true'/>  
-            </Link>
+    <Flex direction={'row'}>
+         <Box p='5' justifyItems={'flex-start'}>
+          <Link to='/sports'>
+            <Button>Back</Button>
+          </Link>  
+         </Box>
+        
+        
+        <Box p='5'>
+           <Heading> Achievements </Heading>
+        </Box>
+         <Divider/>
+        <Box p='5' justifyItems={'flex-end'}>
+          <Link to='/snaps'>
+            <Button>Photos</Button>
+          </Link>  
+         </Box>
+       </Flex>
             
+        <Text color='blue.500' fontWeight={'semibold'} fontSize={'lg'}>"Memories in Metal: My Journey of Achievement"</Text>
         <Image alignSelf='center'
                   backgroundColor="transparent" 
                   boxShadow="lg"
                   w='400px' h='350px'
                  src={window.location.origin + '/sports/Prize.jpg'}/>
+        
         <Image alignSelf='center'
                   backgroundColor="transparent" 
                   boxShadow="lg"
