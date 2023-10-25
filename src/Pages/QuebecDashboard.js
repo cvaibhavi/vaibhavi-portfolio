@@ -48,13 +48,13 @@ const QuebecDashboard = () => {
 
         <div onClick={() => navigate("/uiathletez")} p='5'>  
             <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} 
-                          bg="gray.100" h={isNotSmallerScreen ? 200 : 150} w={isNotSmallerScreen ? '200px' : '150px'} justify="flex-end"  _hover={{ bg: "green.500", }}>
+                          bg="gray.100" h='200px' w='200px' justify="flex-end"  _hover={{ bg: "green.500", }}>
                         
                         <Image alignSelf='center' 
                    pt={0} px={0} py={0}
                    backgroundColor="transparent" 
                    boxShadow="lg"
-                   w={isNotSmallerScreen ? '200px' : '150px'} h={isNotSmallerScreen ? '200px' : '150px'}
+                   w='200px' h='200px'
                    src={window.location.origin + '/UiUx/ui cover pic.png'}/>
                        
                         <Text color="black" p="4" fontSize='medium' fontWeight="bold">
@@ -65,14 +65,14 @@ const QuebecDashboard = () => {
             <Spacer/>
         <div onClick={() => navigate("/uxathletez")} p='5'>  
             <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} 
-                          bg="gray.100" h={isNotSmallerScreen ? '200px' : '150px'} 
-                          w={isNotSmallerScreen ? '200px' : '150px'} justify="flex-end"  _hover={{ bg: "blue.500", }}>
+                          bg="gray.100" h='200px'
+                          w='200px' justify="flex-end"  _hover={{ bg: "blue.500", }}>
                         
                         <Image alignSelf='center' 
                    pt={0} px={0} py={0}
                    backgroundColor="transparent" 
                    boxShadow="lg"
-                   w={isNotSmallerScreen ? '200px' : '150px'} h={isNotSmallerScreen ? '200px' : '150px'}
+                   w='200px' h='200px'
                    src={window.location.origin + '/UiUx/ux cover-1.png'}/>
                        
                         <Text color="black" p="4" fontSize='medium' fontWeight="bold">
@@ -89,14 +89,14 @@ const QuebecDashboard = () => {
         <Flex direction={'row'} pb={'10'}>
         <div onClick={() => navigate("/redesign")}>  
             <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} 
-                          bg="gray.100" h={isNotSmallerScreen ? '200px' : '150px'} 
-                          w={isNotSmallerScreen ? '200px' : '150px'} justify="flex-end"  _hover={{ bg: "orange.500", }}>
+                          bg="gray.100" h='200px'
+                          w='200px' justify="flex-end"  _hover={{ bg: "orange.500", }}>
                         
                         <Image alignSelf='center' 
                    pt={0} px={0} py={0}
                    backgroundColor="transparent" 
                    boxShadow="lg"
-                   w={isNotSmallerScreen ? '200px' : '150px'} h={isNotSmallerScreen ? '200px' : '150px'} 
+                   w='200px' h='200px'
                    src={window.location.origin + '/UiUx/Redesign-Cover photo.png'}/>
                        
                         <Text color="black" p="4" fontSize='medium' fontWeight="bold">
@@ -110,14 +110,14 @@ const QuebecDashboard = () => {
             <Spacer/>
             <div onClick={() => navigate("/atheletezdashboard")}>  
             <Flex rounded='lg' direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} 
-                          bg="gray.100" h={isNotSmallerScreen ? '200px' : '150px'}
-                           w={isNotSmallerScreen ? '200px' : '150px'} justify="flex-end"  _hover={{ bg: "blue.600", }}>
+                          bg="gray.100" h='200px'
+                           w='200px' justify="flex-end"  _hover={{ bg: "blue.600", }}>
                         
                         <Image alignSelf='center' 
                    pt={0} px={0} py={0}
                    backgroundColor="transparent" 
                    boxShadow="lg"
-                   w={isNotSmallerScreen ? '200px' : '150px'} h={isNotSmallerScreen ? '200px' : '150px'} 
+                   w='200px' h='200px' 
                    src={window.location.origin + '/UiUx/Cover-Dashboard.png'}>  
                    </Image>
                    
